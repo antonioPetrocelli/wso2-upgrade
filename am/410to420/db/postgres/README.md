@@ -1,141 +1,137 @@
 # WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison
 
-<html>
-	<head>
-		<meta name="description" content="WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison for version upgrade"/>
-		<style type="text/css">
-		table {
-			table-layout: fixed;
-			width: 100%;
-			text-align: left;
-			vertical-align: top;
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		tr,th,td { 
-			text-align: left;
-			vertical-align: top;
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		td { 
-			border: 1px solid black;
-			display: table-cell;
-			word-wrap: break-word;
-			white-space: wrap;
-		}
-		pre { 
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		img { 
-			width: 100%;
-		}
-		</style>
-	</head>
-	<body>
-	<table>
-		<tr>
-			<th>AM 4.1.0 - WSO2AM_DB</th>
-			<th>AM 4.2.0 - WSO2AM_DB</th>
-			<th>Script</th>
-		</tr>
-		<!-- Screenshot 01 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_01.png"></td>
-			<td>
-				<ul>
-					<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN ADD COLUMN CONSENTED_TOKEN VARCHAR(6);</li>
-					<li><b>Table IDN_OAUTH2_TOKEN_BINDING:</b></li>
-					<ul><li>Remove PRIMARY KEY (TOKEN_ID);
-					<li>Add UNIQUE Constraint (TOKEN_ID,TOKEN_BINDING_TYPE,TOKEN_BINDING_VALUE);</li>
-					</ul>
-					<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ;</li>
-					<li>CREATE SEQUENCE IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ;</li>
+<style type="text/css">
+table {
+	table-layout: fixed;
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	font-family: Courier New;
+	font-size: 12px;
+}
+tr,th,td { 
+	text-align: left;
+	vertical-align: top;
+	font-family: Courier New;
+	font-size: 12px;
+}
+td { 
+	border: 1px solid black;
+	display: table-cell;
+	word-wrap: break-word;
+	white-space: wrap;
+}
+pre { 
+	font-family: Courier New;
+	font-size: 12px;
+}
+img { 
+	width: 100%;
+}
+</style>
+<body>
+<table>
+	<tr>
+		<th>AM 4.1.0 - WSO2AM_DB</th>
+		<th>AM 4.2.0 - WSO2AM_DB</th>
+		<th>Script</th>
+	</tr>
+	<!-- Screenshot 01 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_01.png"></td>
+		<td>
+			<ul>
+				<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN ADD COLUMN CONSENTED_TOKEN VARCHAR(6);</li>
+				<li><b>Table IDN_OAUTH2_TOKEN_BINDING:</b></li>
+				<ul><li>Remove PRIMARY KEY (TOKEN_ID);
+				<li>Add UNIQUE Constraint (TOKEN_ID,TOKEN_BINDING_TYPE,TOKEN_BINDING_VALUE);</li>
 				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 02 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_02.png"></td>
-			<td>
-				<ul>
-					<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN_AUDIT ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ');</li>
-					<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN_AUDIT ADD CONSTRAINT PRIMARY KEY(ID);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 03 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_03.png"></td>
-			<td>
-				<ul>
-					<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD COLUMN QUANTIFIER INTEGER NOT NULL DEFAULT 0;</li>
-					<li><i>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW DROP CONSTRAINT UNIQUE (USER_CODE);</i></li>
-					<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD CONSTRAINT USRCDE_QNTFR_CONSTRAINT UNIQUE (USER_CODE, QUANTIFIER);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 04 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_04.png"></td>
-			<td>
-				<ul>
-					<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_SCOPE_BINDING_PK_SEQ;</li>
-					<li>CREATE SEQUENCE IDN_OAUTH2_SCOPE_BINDING_PK_SEQ;</li>
-					<li>ALTER TABLE IDN_OAUTH2_SCOPE_BINDING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_SCOPE_BINDING_PK_SEQ');</li>
-					<li>ALTER TABLE IDN_OAUTH2_SCOPE_BINDING ADD CONSTRAINT PRIMARY KEY(ID);</li>
-					<li>ALTER TABLE IDN_SCIM_GROUP ADD CONSTRAINT UNIQUE(TENANT_ID, ROLE_NAME, ATTR_NAME);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 05 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_05.png"></td>
-			<td>
-				<ul>
-					<li>DROP SEQUENCE IF EXISTS IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
-					<li>CREATE SEQUENCE IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
-					<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ');</li>
-					<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD CONSTRAINT PRIMARY KEY(ID);</li>
-					<li>DROP SEQUENCE IF EXISTS IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
-					<li>CREATE SEQUENCE IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
-					<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ');</li>
-					<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD CONSTRAINT PRIMARY KEY (ID);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 06 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_06.png"></td>
-			<td>
-				<ul>
-					<li>ALTER TABLE WF_BPS_PROFILE ALTER COLUMN USERNAME TYPE VARCHAR(100);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 07 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_07.png"></td>
-			<td>
-				<ul>
-					<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ;</li>
-					<li>CREATE SEQUENCE IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ;</li>
-					<li>ALTER TABLE IDN_OAUTH2_CIBA_REQUEST_SCOPES ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ');</li>
-					<li>ALTER TABLE IDN_OAUTH2_CIBA_REQUEST_SCOPES ADD CONSTRAINT PRIMARY KEY (ID);</li>
-					<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD COLUMN ID SERIAL;</li>
-					<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD COLUMN TENANT_ID INTEGER NOT NULL DEFAULT 0;</li>
-					<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD CONSTRAINT UNIQUE (IDP_SESSION_ID, TENANT_ID);</li>
-					<li><i>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ALTER CONSTRAINT PRIMARY KEY (ID);</i></li>
-					<li>INSERT INTO IDN_CONFIG_TYPE (ID, NAME, DESCRIPTION) VALUES
-					('669b99ca-cdb0-44a6-8cae-babed3b585df', 'Publisher', 'A resource type to keep the event publisher configurations'),
-					('73f6d9ca-62f4-4566-bab9-2a930ae51ba8', 'BRANDING_PREFERENCES', 'A resource type to keep the tenant branding preferences'),
-					('899c69b2-8bf7-46b5-9666-f7f99f90d6cc', 'fido-config', 'A resource type to store FIDO authenticator related preferences');</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="3">
+				<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ;</li>
+				<li>CREATE SEQUENCE IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ;</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 02 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_02.png"></td>
+		<td>
+			<ul>
+				<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN_AUDIT ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ');</li>
+				<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN_AUDIT ADD CONSTRAINT PRIMARY KEY(ID);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 03 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_03.png"></td>
+		<td>
+			<ul>
+				<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD COLUMN QUANTIFIER INTEGER NOT NULL DEFAULT 0;</li>
+				<li><i>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW DROP CONSTRAINT UNIQUE (USER_CODE);</i></li>
+				<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD CONSTRAINT USRCDE_QNTFR_CONSTRAINT UNIQUE (USER_CODE, QUANTIFIER);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 04 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_04.png"></td>
+		<td>
+			<ul>
+				<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_SCOPE_BINDING_PK_SEQ;</li>
+				<li>CREATE SEQUENCE IDN_OAUTH2_SCOPE_BINDING_PK_SEQ;</li>
+				<li>ALTER TABLE IDN_OAUTH2_SCOPE_BINDING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_SCOPE_BINDING_PK_SEQ');</li>
+				<li>ALTER TABLE IDN_OAUTH2_SCOPE_BINDING ADD CONSTRAINT PRIMARY KEY(ID);</li>
+				<li>ALTER TABLE IDN_SCIM_GROUP ADD CONSTRAINT UNIQUE(TENANT_ID, ROLE_NAME, ATTR_NAME);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 05 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_05.png"></td>
+		<td>
+			<ul>
+				<li>DROP SEQUENCE IF EXISTS IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
+				<li>CREATE SEQUENCE IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
+				<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ');</li>
+				<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD CONSTRAINT PRIMARY KEY(ID);</li>
+				<li>DROP SEQUENCE IF EXISTS IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
+				<li>CREATE SEQUENCE IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
+				<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ');</li>
+				<li>ALTER TABLE IDN_AUTH_USER_SESSION_MAPPING ADD CONSTRAINT PRIMARY KEY (ID);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 06 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_06.png"></td>
+		<td>
+			<ul>
+				<li>ALTER TABLE WF_BPS_PROFILE ALTER COLUMN USERNAME TYPE VARCHAR(100);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 07 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_07.png"></td>
+		<td>
+			<ul>
+				<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ;</li>
+				<li>CREATE SEQUENCE IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ;</li>
+				<li>ALTER TABLE IDN_OAUTH2_CIBA_REQUEST_SCOPES ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ');</li>
+				<li>ALTER TABLE IDN_OAUTH2_CIBA_REQUEST_SCOPES ADD CONSTRAINT PRIMARY KEY (ID);</li>
+				<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD COLUMN ID SERIAL;</li>
+				<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD COLUMN TENANT_ID INTEGER NOT NULL DEFAULT 0;</li>
+				<li>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ADD CONSTRAINT UNIQUE (IDP_SESSION_ID, TENANT_ID);</li>
+				<li><i>ALTER TABLE IDN_FED_AUTH_SESSION_MAPPING ALTER CONSTRAINT PRIMARY KEY (ID);</i></li>
+				<li>INSERT INTO IDN_CONFIG_TYPE (ID, NAME, DESCRIPTION) VALUES
+				('669b99ca-cdb0-44a6-8cae-babed3b585df', 'Publisher', 'A resource type to keep the event publisher configurations'),
+				('73f6d9ca-62f4-4566-bab9-2a930ae51ba8', 'BRANDING_PREFERENCES', 'A resource type to keep the tenant branding preferences'),
+				('899c69b2-8bf7-46b5-9666-f7f99f90d6cc', 'fido-config', 'A resource type to store FIDO authenticator related preferences');</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
 <pre>
 DROP TABLE IF EXISTS IDN_OAUTH2_USER_CONSENT;
 DROP SEQUENCE IF EXISTS IND_OAUTH2_USER_CONSENT_PK_SEQ;
@@ -209,53 +205,53 @@ CREATE TABLE SP_SHARED_APP(
 	UNIQUE (SHARED_APP_ID)
 );
 </pre>
-			</td>
-		</tr>
-		<!-- Screenshot 08 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_08.png"></td>
-			<td>
-				<ul>
-					<li>DROP INDEX IDX_AT_CK_AU ON IDN_OAUTH2_ACCESS_TOKEN(CONSUMER_KEY_ID, AUTHZ_USER, TOKEN_STATE, USER_TYPE);</li>
-					<li>DROP INDEX IDX_AT_AU_TID_UD_TS_CKID ON IDN_OAUTH2_ACCESS_TOKEN(AUTHZ_USER, TENANT_ID, USER_DOMAIN, TOKEN_STATE, CONSUMER_KEY_ID);</li>
-					<li>DROP INDEX IDX_AT_AU_CKID_TS_UT ON IDN_OAUTH2_ACCESS_TOKEN(AUTHZ_USER, CONSUMER_KEY_ID, TOKEN_STATE, USER_TYPE);</li>
-					<li>CREATE INDEX IDX_IDN_AUTH_SSTR_ST_OP_ID_TM ON IDN_AUTH_SESSION_STORE (OPERATION, SESSION_TYPE, SESSION_ID, TIME_CREATED);</li>
-					<li>CREATE INDEX IDX_IDN_AUTH_SSTR_ET_ID ON IDN_AUTH_SESSION_STORE (EXPIRY_TIME, SESSION_ID);</li>
-					<li>CREATE INDEX IDX_AUTH_SAI_UN_AID_SID ON IDN_AUTH_SESSION_APP_INFO (APP_ID, LOWER(SUBJECT), SESSION_ID);</li>
-					<li>DROP INDEX IDX_IOP_TID_CK ON IDN_OIDC_PROPERTY(TENANT_ID,CONSUMER_KEY);</li>
-					<li>CREATE INDEX IDX_IOP_CK ON IDN_OIDC_PROPERTY(CONSUMER_KEY);</li>
-					<li>CREATE INDEX IDX_TK_VALUE_TYPE ON IDN_OAUTH2_TOKEN_BINDING (TOKEN_BINDING_VALUE, TOKEN_BINDING_TYPE);</li>
-					<li>CREATE INDEX IDX_SP_APP_NAME_CI ON SP_APP (LOWER(APP_NAME));</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 09 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_09.png"></td>
-			<td>
-				<ul>
-					<li>ALTER TABLE CM_RECEIPT_SP_ASSOC ALTER COLUMN ID INTEGER DEFAULT NEXTVAL('CM_RECEIPT_SP_ASSOC_PK_SEQ');</li>
-					<li>ALTER TABLE CM_RECEIPT_SP_ASSOC ALTER COLUMN SP_DESCRIPTION VARCHAR(1024);</li>
-					<li>DROP SEQUENCE IF EXISTS CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ;</li>
-					<li>CREATE SEQUENCE CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ;</li>
-					<li>ALTER TABLE CM_SP_PURPOSE_PURPOSE_CAT_ASSC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ');</li>
-					<li>ALTER TABLE CM_SP_PURPOSE_PURPOSE_CAT_ASSC ADD CONSTRAINT PRIMARY KEY (ID);</li>
-					<li>DROP SEQUENCE IF EXISTS CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
-					<li>CREATE SEQUENCE CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
-					<li>ALTER TABLE CM_PURPOSE_PII_CAT_ASSOC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ');</li>
-					<li>ALTER TABLE CM_PURPOSE_PII_CAT_ASSOC ADD CONSTRAINT PRIMARY KEY (ID);</li>
-					<li>DROP SEQUENCE IF EXISTS CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
-					<li>CREATE SEQUENCE CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
-					<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ');</li>
-					<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD COLUMN IS_CONSENTED BOOLEAN DEFAULT TRUE;</li>
-					<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD CONSTRAINT PRIMARY KEY (ID);</li>
-				</ul>
-			</td>
-		</tr>
-		<!-- Screenshot 10 -->
-		<tr>
-			<td colspan="2"><img src="img/410to420_10.png"></td>
-			<td>
+		</td>
+	</tr>
+	<!-- Screenshot 08 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_08.png"></td>
+		<td>
+			<ul>
+				<li>DROP INDEX IDX_AT_CK_AU ON IDN_OAUTH2_ACCESS_TOKEN(CONSUMER_KEY_ID, AUTHZ_USER, TOKEN_STATE, USER_TYPE);</li>
+				<li>DROP INDEX IDX_AT_AU_TID_UD_TS_CKID ON IDN_OAUTH2_ACCESS_TOKEN(AUTHZ_USER, TENANT_ID, USER_DOMAIN, TOKEN_STATE, CONSUMER_KEY_ID);</li>
+				<li>DROP INDEX IDX_AT_AU_CKID_TS_UT ON IDN_OAUTH2_ACCESS_TOKEN(AUTHZ_USER, CONSUMER_KEY_ID, TOKEN_STATE, USER_TYPE);</li>
+				<li>CREATE INDEX IDX_IDN_AUTH_SSTR_ST_OP_ID_TM ON IDN_AUTH_SESSION_STORE (OPERATION, SESSION_TYPE, SESSION_ID, TIME_CREATED);</li>
+				<li>CREATE INDEX IDX_IDN_AUTH_SSTR_ET_ID ON IDN_AUTH_SESSION_STORE (EXPIRY_TIME, SESSION_ID);</li>
+				<li>CREATE INDEX IDX_AUTH_SAI_UN_AID_SID ON IDN_AUTH_SESSION_APP_INFO (APP_ID, LOWER(SUBJECT), SESSION_ID);</li>
+				<li>DROP INDEX IDX_IOP_TID_CK ON IDN_OIDC_PROPERTY(TENANT_ID,CONSUMER_KEY);</li>
+				<li>CREATE INDEX IDX_IOP_CK ON IDN_OIDC_PROPERTY(CONSUMER_KEY);</li>
+				<li>CREATE INDEX IDX_TK_VALUE_TYPE ON IDN_OAUTH2_TOKEN_BINDING (TOKEN_BINDING_VALUE, TOKEN_BINDING_TYPE);</li>
+				<li>CREATE INDEX IDX_SP_APP_NAME_CI ON SP_APP (LOWER(APP_NAME));</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 09 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_09.png"></td>
+		<td>
+			<ul>
+				<li>ALTER TABLE CM_RECEIPT_SP_ASSOC ALTER COLUMN ID INTEGER DEFAULT NEXTVAL('CM_RECEIPT_SP_ASSOC_PK_SEQ');</li>
+				<li>ALTER TABLE CM_RECEIPT_SP_ASSOC ALTER COLUMN SP_DESCRIPTION VARCHAR(1024);</li>
+				<li>DROP SEQUENCE IF EXISTS CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ;</li>
+				<li>CREATE SEQUENCE CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ;</li>
+				<li>ALTER TABLE CM_SP_PURPOSE_PURPOSE_CAT_ASSC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_SP_PURPOSE_PURPOSE_CAT_ASSC_PK_SEQ');</li>
+				<li>ALTER TABLE CM_SP_PURPOSE_PURPOSE_CAT_ASSC ADD CONSTRAINT PRIMARY KEY (ID);</li>
+				<li>DROP SEQUENCE IF EXISTS CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
+				<li>CREATE SEQUENCE CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
+				<li>ALTER TABLE CM_PURPOSE_PII_CAT_ASSOC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_PURPOSE_PII_CAT_ASSOC_PK_SEQ');</li>
+				<li>ALTER TABLE CM_PURPOSE_PII_CAT_ASSOC ADD CONSTRAINT PRIMARY KEY (ID);</li>
+				<li>DROP SEQUENCE IF EXISTS CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
+				<li>CREATE SEQUENCE CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ;</li>
+				<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_SP_PURPOSE_PII_CAT_ASSOC_PK_SEQ');</li>
+				<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD COLUMN IS_CONSENTED BOOLEAN DEFAULT TRUE;</li>
+				<li>ALTER TABLE CM_SP_PURPOSE_PII_CAT_ASSOC ADD CONSTRAINT PRIMARY KEY (ID);</li>
+			</ul>
+		</td>
+	</tr>
+	<!-- Screenshot 10 -->
+	<tr>
+		<td colspan="2"><img src="img/410to420_10.png"></td>
+		<td>
 <pre>
 DROP SEQUENCE IF EXISTS CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ;
 CREATE SEQUENCE CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ;
@@ -291,8 +287,7 @@ CREATE TABLE IF NOT EXISTS AM_CORRELATION_PROPERTIES(
 	);
 CREATE INDEX IDX_IOAT_TSH_TS ON IDN_OAUTH2_ACCESS_TOKEN(TOKEN_SCOPE_HASH,TOKEN_STATE);
 </pre>
-</td>
-</tr>
-</table>
+			</td>
+		</tr>
+	</table>
 </body>
-</html>
