@@ -15,6 +15,8 @@
 		tr,th,td { 
 			text-align: left;
 			vertical-align: top;
+			font-family: Courier New;
+			font-size: 12px;
 		}
 		td { 
 			border: 1px solid black;
