@@ -12,7 +12,7 @@
 			font-family: Courier New;
 			font-size: 12px;
 		}
-		th,td { 
+		tr,th,td { 
 			text-align: left;
 			vertical-align: top;
 		}
