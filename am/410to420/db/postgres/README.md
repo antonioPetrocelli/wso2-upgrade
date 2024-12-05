@@ -43,9 +43,7 @@
 		</tr>
 		<!-- Screenshot 01 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_01.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_01.png"></td>
 			<td>
 				<ul>
 					<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN ADD COLUMN CONSENTED_TOKEN VARCHAR(6);</li>
@@ -60,9 +58,7 @@
 		</tr>
 		<!-- Screenshot 02 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_02.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_02.png"></td>
 			<td>
 				<ul>
 					<li>ALTER TABLE IDN_OAUTH2_ACCESS_TOKEN_AUDIT ADD COLUMN ID INTEGER DEFAULT NEXTVAL('IDN_OAUTH2_ACCESS_TOKEN_AUDIT_PK_SEQ');</li>
@@ -72,9 +68,7 @@
 		</tr>
 		<!-- Screenshot 03 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_03.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_03.png"></td>
 			<td>
 				<ul>
 					<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD COLUMN QUANTIFIER INTEGER NOT NULL DEFAULT 0;</li>
@@ -85,9 +79,7 @@
 		</tr>
 		<!-- Screenshot 04 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_04.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_04.png"></td>
 			<td>
 				<ul>
 					<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_SCOPE_BINDING_PK_SEQ;</li>
@@ -100,9 +92,7 @@
 		</tr>
 		<!-- Screenshot 05 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_05.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_05.png"></td>
 			<td>
 				<ul>
 					<li>DROP SEQUENCE IF EXISTS IDN_AUTH_USER_SESSION_MAPPING_PK_SEQ;</li>
@@ -118,9 +108,7 @@
 		</tr>
 		<!-- Screenshot 06 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_06.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_06.png"></td>
 			<td>
 				<ul>
 					<li>ALTER TABLE WF_BPS_PROFILE ALTER COLUMN USERNAME TYPE VARCHAR(100);</li>
@@ -129,9 +117,7 @@
 		</tr>
 		<!-- Screenshot 07 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_07.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_07.png"></td>
 			<td>
 				<ul>
 					<li>DROP SEQUENCE IF EXISTS IDN_OAUTH2_CIBA_REQUEST_SCOPES_PK_SEQ;</li>
@@ -228,9 +214,7 @@ CREATE TABLE SP_SHARED_APP(
 		</tr>
 		<!-- Screenshot 08 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_08.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_08.png"></td>
 			<td>
 				<ul>
 					<li>DROP INDEX IDX_AT_CK_AU ON IDN_OAUTH2_ACCESS_TOKEN(CONSUMER_KEY_ID, AUTHZ_USER, TOKEN_STATE, USER_TYPE);</li>
@@ -248,9 +232,7 @@ CREATE TABLE SP_SHARED_APP(
 		</tr>
 		<!-- Screenshot 09 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_09.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_09.png"></td>
 			<td>
 				<ul>
 					<li>ALTER TABLE CM_RECEIPT_SP_ASSOC ALTER COLUMN ID INTEGER DEFAULT NEXTVAL('CM_RECEIPT_SP_ASSOC_PK_SEQ');</li>
@@ -273,9 +255,7 @@ CREATE TABLE SP_SHARED_APP(
 		</tr>
 		<!-- Screenshot 10 -->
 		<tr>
-			<td colspan="2">
-				<img src="img/410to420_10.png">
-			</td>
+			<td colspan="2"><img src="img/410to420_10.png"></td>
 			<td>
 <pre>
 DROP SEQUENCE IF EXISTS CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ;
