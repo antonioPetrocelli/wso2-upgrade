@@ -311,8 +311,8 @@ CREATE TABLE IF NOT EXISTS AM_CORRELATION_PROPERTIES(
 	);
 CREATE INDEX IDX_IOAT_TSH_TS ON IDN_OAUTH2_ACCESS_TOKEN(TOKEN_SCOPE_HASH,TOKEN_STATE);
 </pre>
-			</td>
-		</tr>
-	</table>
-	</body>
+</td>
+</tr>
+</table>
+</body>
 </html>
