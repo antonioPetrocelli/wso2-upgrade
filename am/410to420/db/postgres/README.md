@@ -26,6 +26,9 @@
 			font-family: Courier New;
 			font-size: 12px;
 		}
+		img { 
+			align: top;
+		}
 		</style>
 	</head>
 	<body>
