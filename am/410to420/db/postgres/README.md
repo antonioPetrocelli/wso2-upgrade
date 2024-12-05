@@ -27,7 +27,7 @@
 			font-size: 12px;
 		}
 		img { 
-			vertical-align: top;
+			vertical-align: text-top;
 			width: 100%;
 		}
 		</style>
