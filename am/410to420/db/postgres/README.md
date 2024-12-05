@@ -1,6 +1,5 @@
 # WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison
 
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="description" content="WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison for version upgrade"/>
