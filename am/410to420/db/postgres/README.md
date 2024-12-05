@@ -28,6 +28,7 @@
 		}
 		img { 
 			align: top;
+			width: 100%;
 		}
 		</style>
 	</head>
@@ -41,7 +42,7 @@
 		<!-- Screenshot 01 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_01.png" width="100%">
+				<img src="img/410to420_01.png">
 			</td>
 			<td>
 				<ul>
@@ -58,7 +59,7 @@
 		<!-- Screenshot 02 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_02.png" width="100%">
+				<img src="img/410to420_02.png">
 			</td>
 			<td>
 				<ul>
@@ -70,7 +71,7 @@
 		<!-- Screenshot 03 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_03.png" width="100%">
+				<img src="img/410to420_03.png">
 			</td>
 			<td>
 				<ul>
@@ -83,7 +84,7 @@
 		<!-- Screenshot 04 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_04.png" width="100%">
+				<img src="img/410to420_04.png">
 			</td>
 			<td>
 				<ul>
@@ -98,7 +99,7 @@
 		<!-- Screenshot 05 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_05.png" width="100%">
+				<img src="img/410to420_05.png">
 			</td>
 			<td>
 				<ul>
@@ -116,7 +117,7 @@
 		<!-- Screenshot 06 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_06.png" width="100%">
+				<img src="img/410to420_06.png">
 			</td>
 			<td>
 				<ul>
@@ -127,7 +128,7 @@
 		<!-- Screenshot 07 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_07.png" width="100%">
+				<img src="img/410to420_07.png">
 			</td>
 			<td>
 				<ul>
@@ -226,7 +227,7 @@ CREATE TABLE SP_SHARED_APP(
 		<!-- Screenshot 08 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_08.png" width="100%">
+				<img src="img/410to420_08.png">
 			</td>
 			<td>
 				<ul>
@@ -246,7 +247,7 @@ CREATE TABLE SP_SHARED_APP(
 		<!-- Screenshot 09 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_09.png" width="100%">
+				<img src="img/410to420_09.png">
 			</td>
 			<td>
 				<ul>
@@ -271,7 +272,7 @@ CREATE TABLE SP_SHARED_APP(
 		<!-- Screenshot 10 -->
 		<tr>
 			<td colspan="2">
-				<img src="img/410to420_10.png" width="100%">
+				<img src="img/410to420_10.png">
 			</td>
 			<td>
 				<ul>
