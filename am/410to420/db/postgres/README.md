@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison</title>
-		<meta name="description" content="WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison for version upgrade">
-		<style type="text/css">
-		table {
-			table-layout: fixed;
-			width: 100%;
-			text-align: left;
-			vertical-align: top;
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		tr,th,td { 
-			text-align: left;
-			vertical-align: top;
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		td { 
-			border: 1px solid black;
-			display: table-cell;
-			word-wrap: break-word;
-			white-space: wrap;
-		}
-		pre { 
-			font-family: Courier New;
-			font-size: 12px;
-		}
-		img { 
-			width: 100%;
-		}
-		</style>
-	</head>
+<head>
+<title>WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison</title>
+<meta name="description" content="WSO2 APIM 4.1.0 to 4.2.0 PostGres DB Comparison for version upgrade">
+<style type="text/css">
+table {
+table-layout: fixed;
+width: 100%;
+text-align: left;
+vertical-align: top;
+font-family: Courier New;
+font-size: 12px;
+}
+tr,th,td { 
+text-align: left;
+vertical-align: top;
+font-family: Courier New;
+font-size: 12px;
+}
+td { 
+border: 1px solid black;
+display: table-cell;
+word-wrap: break-word;
+white-space: wrap;
+}
+pre { 
+font-family: Courier New;
+font-size: 12px;
+}
+img { 
+width: 100%;
+}
+</style>
+</head>
 	<body>
 	<table>
 		<tr>
