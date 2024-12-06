@@ -20,15 +20,18 @@
 
 ### WSO2AM_DB
 * deployment.toml section: [database.apim_db]
-* Source script: <API-M_HOME>/dbscripts/apimgt/postgresql.sql
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/apimgt/postgresql.sql](/am/wso2am-4.1.0/dbscripts/apimgt/postgresql.sql)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/apimgt/postgresql.sql](/am/wso2am-4.2.0/dbscripts/apimgt/postgresql.sql)
 
 ### WSO2_SHARED_DB
 * deployment.toml section: [database.shared_db]
-* Source script: <API-M_HOME>/dbscripts/postgresql.sql
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.1.0/dbscripts/postgresql.sql)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.2.0/dbscripts/postgresql.sql)
 
 ### WSO2CARBON_DB
 * deployment.toml section: [database.local]
-* Source script: <API-M_HOME>/dbscripts/postgresql.sql
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.1.0/dbscripts/postgresql.sql)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.2.0/dbscripts/postgresql.sql)
 * **Note:** *By default WSO2CARBON_DB will be an embedded H2 database and it is not necessary to change it to another database. But if you have a requirement to change it, make sure that each server node have its own WSO2CARBON_DB*
         
 ## AM DB Version Comparison
