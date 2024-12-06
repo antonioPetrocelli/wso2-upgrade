@@ -16,7 +16,7 @@
 
 4. Migrazione del database
 
-    4.1. Preparare una copia del vecchio database
+    4.1. Preparare una copia del vecchio database (struttura e dati)
     4.2. Controllare le differenze nella struttura dei database e creare gli script di aggiornamento
     4.3. Applicare gli script di aggioramento sul nuovo database.
 
