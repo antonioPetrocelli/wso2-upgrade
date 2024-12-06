@@ -32,7 +32,7 @@
 * **Note:** *By default WSO2CARBON_DB will be an embedded H2 database and it is not necessary to change it to another database. But if you have a requirement to change it, make sure that each server node have its own WSO2CARBON_DB*
         
 ## AM DB Version Comparison
-* [410to420](/am/410to420/db/postgres/410to420.html)
+* [410to420](/am/410to420/db/postgres/)
 * <a href="410to420.html" target="_blank">WSO2 AM 4.1.0 To WSO2 AM 4.2.0 Database comparison</a>
 * <a href="420to430.html" target="_blank">WSO2 AM 4.2.0 To WSO2 AM 4.3.0 Database comparison</a>
 * <a href="410to430.html" target="_blank">WSO2 AM 4.1.0 To WSO2 AM 4.3.0 Database comparison</a>
