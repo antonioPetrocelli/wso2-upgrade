@@ -20,20 +20,20 @@
 
 ### WSO2AM_DB
 * deployment.toml section: [database.apim_db]
-* Source script v4.1.0: [<API-M_HOME>/dbscripts/apimgt/postgresql.sql](/am/wso2am-4.1.0/dbscripts/apimgt/postgresql.sql)
-* Source script v4.2.0: [<API-M_HOME>/dbscripts/apimgt/postgresql.sql](/am/wso2am-4.2.0/dbscripts/apimgt/postgresql.sql)
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/apimgt/](/am/wso2am-4.1.0/dbscripts/apimgt/)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/apimgt/](/am/wso2am-4.2.0/dbscripts/apimgt/)
 
 ### WSO2_SHARED_DB
 * deployment.toml section: [database.shared_db]
-* Source script v4.1.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.1.0/dbscripts/postgresql.sql)
-* Source script v4.2.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.2.0/dbscripts/postgresql.sql)
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.1.0/dbscripts/)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.2.0/dbscripts/)
 
 ### WSO2CARBON_DB
 * deployment.toml section: [database.local]
-* Source script v4.1.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.1.0/dbscripts/postgresql.sql)
-* Source script v4.2.0: [<API-M_HOME>/dbscripts/postgresql.sql](/am/wso2am-4.2.0/dbscripts/postgresql.sql)
+* Source script v4.1.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.1.0/dbscripts/)
+* Source script v4.2.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.2.0/dbscripts/)
 * **Note:** *By default WSO2CARBON_DB will be an embedded H2 database and it is not necessary to change it to another database. But if you have a requirement to change it, make sure that each server node have its own WSO2CARBON_DB*
         
-## AM DB Version Comparison
+## AM Postgres DB Version Comparison
 * [410to420](/am/410to420/db/postgres/)
 * [420to430](/am/420to430/db/postgres/)
