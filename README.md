@@ -1,5 +1,5 @@
 # WSO2 Upgrade
-HowTo upgrade wso2am, wso2is and wso2mi
+ HowTo upgrade wso2am, wso2is and wso2mi
 
 |Redatto da    |Antonio Petrocelli                   |
 |--------------|-------------------------------------|
@@ -22,7 +22,6 @@ Il presente documento illustra gli step necessari per aggiornare le versioni dei
 * (Reference)[https://apim.docs.wso2.com/en/4.3.0/reference/product-apis/overview/]
 * (DB Docs)[https://apim.docs.wso2.com/en/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/]
 * DB Upgrade: https://apim.docs.wso2.com/en/4.3.0/reference/guides/database-upgrade-guide/]
-
 
 ## Documentazione di riferimento per WSO2 Identity Server
 
