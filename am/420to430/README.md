@@ -21,7 +21,7 @@
 * Source script v4.2.0: [<API-M_HOME>/dbscripts/apimgt/](/am/wso2am-4.2.0/dbscripts/apimgt/)
 * Source script v4.3.0: [<API-M_HOME>/dbscripts/apimgt/](/am/wso2am-4.3.0/dbscripts/apimgt/)
 
-### WSO2_SHARED_DB
+### WSO2SHARED_DB
 * deployment.toml section: [database.shared_db]
 * Source script v4.2.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.2.0/dbscripts/)
 * Source script v4.3.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.3.0/dbscripts/)

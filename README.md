@@ -16,8 +16,7 @@ La presente documentazione illustra gli step necessari per aggiornare le version
 |Wso2 Identity Server   |6.0.0          |6.1.0      |           |[600to610](/is/600to610/) |
 |Wso2 Micro Integrator  |4.2.0          |4.3.0      |[mi](/mi/) |[420to430](/mi/420to430/) |
 
-* Appunti
+## To Do
+* Verificare la sintassi degli script PostGres per ADD, ALTER e DROP CONSTRAINT
+* Verificare se WSO2UMA_DB e WSO2CONSENT_DB sono stati separati dal WSO2IDENTITY_DB
 * Release Notes: controllare funzionalità deprecate e/o dismesse
-* Ricerche:
-    * WSO2 Upgrade Process
-    * WSO2 Database Upgrade Guide
