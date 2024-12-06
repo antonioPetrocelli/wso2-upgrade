@@ -16,37 +16,28 @@ Il presente documento illustra gli step necessari per aggiornare le versioni dei
 |Wso2 Identity Server   |6.0.0          |6.1.0      |[600to610](/is/600to610/) |
 |Wso2 Micro Integrator  |4.2.0          |4.3.0      |[420to430](/mi/420to430/) |
 
-Il presente documento evidenzia le differenze nei database tra le versioni di WSO2 prese in esame.
-
-* Appunti
-* Database: controllare differenze negli script
-* Release Notes: controllare funzionalità deprecate e/o dismesse
-* Ricerche:
-    * WSO2 Upgrade Process
-    * WSO2 Database Upgrade Guide
-
 ## Documentazione di riferimento per WSO2 Api Manager
 
 ### AM 4.1.0
-* Docs: https://apim.docs.wso2.com/en/4.1.0/
-* Release Notes: https://apim.docs.wso2.com/en/4.1.0/get-started/about-this-release/
-* Reference: https://apim.docs.wso2.com/en/4.1.0/reference/product-apis/overview/
-* DB Docs: https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
+* (Docs)[https://apim.docs.wso2.com/en/4.1.0/]
+* (Release Notes)[https://apim.docs.wso2.com/en/4.1.0/get-started/about-this-release/
+* (Reference)[https://apim.docs.wso2.com/en/4.1.0/reference/product-apis/overview/
+* (DB Docs)[https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
 * DB Upgrade: https://apim.docs.wso2.com/en/4.1.0/reference/guides/database-upgrade-guide/
 
 ### AM 4.2.0
-* Docs: https://apim.docs.wso2.com/en/4.2.0/
-* Release Notes: https://apim.docs.wso2.com/en/4.2.0/get-started/about-this-release/
-* Reference: https://apim.docs.wso2.com/en/4.2.0/reference/product-apis/overview/
-* DB Docs: https://apim.docs.wso2.com/en/4.2.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
-* DB Upgrade: https://apim.docs.wso2.com/en/4.2.0/reference/guides/database-upgrade-guide/
+* (Docs)[https://apim.docs.wso2.com/en/4.2.0/]
+* (Release Notes)[https://apim.docs.wso2.com/en/4.2.0/get-started/about-this-release/]
+* (Reference)[https://apim.docs.wso2.com/en/4.2.0/reference/product-apis/overview/]
+* (DB Docs)[https://apim.docs.wso2.com/en/4.2.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/]
+* DB Upgrade: https://apim.docs.wso2.com/en/4.2.0/reference/guides/database-upgrade-guide/]
 
 ### AM 4.3.0
-* Docs: https://apim.docs.wso2.com/en/4.3.0/
-* Release Notes: https://apim.docs.wso2.com/en/4.3.0/get-started/about-this-release/
-* Reference: https://apim.docs.wso2.com/en/4.3.0/reference/product-apis/overview/
-* DB Docs: https://apim.docs.wso2.com/en/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
-* DB Upgrade: https://apim.docs.wso2.com/en/4.3.0/reference/guides/database-upgrade-guide/
+* (Docs)[https://apim.docs.wso2.com/en/4.3.0/]
+* (Release Notes)[https://apim.docs.wso2.com/en/4.3.0/get-started/about-this-release/]
+* (Reference)[https://apim.docs.wso2.com/en/4.3.0/reference/product-apis/overview/]
+* (DB Docs)[https://apim.docs.wso2.com/en/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/]
+* DB Upgrade: https://apim.docs.wso2.com/en/4.3.0/reference/guides/database-upgrade-guide/]
 
 ## Database utilizzati da WSO2 Api Manager
 
@@ -71,37 +62,49 @@ Il presente documento evidenzia le differenze nei database tra le versioni di WS
 ## Documentazione di riferimento per WSO2 Identity Server
 
 ### IS 5.11.0
-* Docs: https://is.docs.wso2.com/en/5.11.0/
-* Release Notes: https://is.docs.wso2.com/en/5.11.0/get-started/about-this-release/
-* Reference: https://is.docs.wso2.com/en/5.11.0/references/references-overview/
-* DB Docs: https://is.docs.wso2.com/en/5.11.0/setup/working-with-databases/
+* (Docs)[https://is.docs.wso2.com/en/5.11.0/]
+* (Release Notes)[https://is.docs.wso2.com/en/5.11.0/get-started/about-this-release/]
+* (Reference)[https://is.docs.wso2.com/en/5.11.0/references/references-overview/]
+* (DB Docs)[https://is.docs.wso2.com/en/5.11.0/setup/working-with-databases/]
 
 ### IS 6.0.0
-* Docs: https://is.docs.wso2.com/en/6.0.0/
-* Release Notes: https://is.docs.wso2.com/en/6.0.0/get-started/about-this-release/
-* Reference: https://is.docs.wso2.com/en/6.0.0/references/references-overview/
-* DB Docs: https://is.docs.wso2.com/en/6.0.0/deploy/work-with-databases/
+* (Docs)[https://is.docs.wso2.com/en/6.0.0/]
+* (Release Notes)[https://is.docs.wso2.com/en/6.0.0/get-started/about-this-release/]
+* (Reference)[https://is.docs.wso2.com/en/6.0.0/references/references-overview/]
+* (DB Docs)[https://is.docs.wso2.com/en/6.0.0/deploy/work-with-databases/]
 
 ### IS 6.1.0
-* Docs: https://is.docs.wso2.com/en/6.1.0/
-* Release Notes: https://is.docs.wso2.com/en/6.1.0/get-started/about-this-release/
-* Reference: https://is.docs.wso2.com/en/6.1.0/references/references-overview/
-* DB Docs: https://is.docs.wso2.com/en/6.1.0/deploy/work-with-databases/
+* (Docs)[https://is.docs.wso2.com/en/6.1.0/]
+* (Release Notes)[https://is.docs.wso2.com/en/6.1.0/get-started/about-this-release/]
+* (Reference)[https://is.docs.wso2.com/en/6.1.0/references/references-overview/]
+* (DB Docs)[https://is.docs.wso2.com/en/6.1.0/deploy/work-with-databases/]
 
 ## Database utilizzati da WSO2 Identity Server
 
 ## Documentazione di riferimento per WSO2 Micro Integrator
 
 ### MI 4.2.0
-* Docs: https://mi.docs.wso2.com/en/4.2.0/
-* Release Notes: https://mi.docs.wso2.com/en/4.2.0/get-started/about-this-release/
-* Reference: https://mi.docs.wso2.com/en/4.2.0/reference/config-catalog-mi/
-* DB Docs: https://mi.docs.wso2.com/en/4.2.0/install-and-setup/setup/databases/setting-up-postgresql/
+* (Docs)[https://mi.docs.wso2.com/en/4.2.0/]
+* (Release Notes)[https://mi.docs.wso2.com/en/4.2.0/get-started/about-this-release/]
+* (Reference)[https://mi.docs.wso2.com/en/4.2.0/reference/config-catalog-mi/]
+* (DB Docs)[https://mi.docs.wso2.com/en/4.2.0/install-and-setup/setup/databases/setting-up-postgresql/]
 	
 ### MI 4.3.0
-* Docs: https://mi.docs.wso2.com/en/4.3.0/
-* Release Notes: https://mi.docs.wso2.com/en/4.3.0/get-started/about-this-release/
-* Reference: https://mi.docs.wso2.com/en/4.3.0/reference/config-catalog-mi/
-* DB Docs: https://mi.docs.wso2.com/en/4.3.0/install-and-setup/setup/databases/setting-up-postgresql/
+* (Docs)[https://mi.docs.wso2.com/en/4.3.0/]
+* (Release Notes)[https://mi.docs.wso2.com/en/4.3.0/get-started/about-this-release/]
+* (Reference)[https://mi.docs.wso2.com/en/4.3.0/reference/config-catalog-mi/]
+* (DB Docs)[https://mi.docs.wso2.com/en/4.3.0/install-and-setup/setup/databases/setting-up-postgresql/]
 
 ## Database utilizzati da WSO2 Micro Integrator
+
+
+
+
+
+
+* Appunti
+* Database: controllare differenze negli script
+* (Release Notes)[controllare funzionalità deprecate e/o dismesse
+* Ricerche:
+    * WSO2 Upgrade Process
+    * WSO2 Database Upgrade Guide
