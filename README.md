@@ -1,5 +1,5 @@
 # WSO2 Upgrade
- Linee guida per l'aggiornamento di versione di Wso2 API Manager, Identity Server e Micro Integrator
+ Linee guida per l'aggiornamento di Wso2 API Manager, Identity Server e Micro Integrator
 
 |Redatto da    |Antonio Petrocelli                   |
 |--------------|-------------------------------------|
