@@ -16,13 +16,6 @@ Il presente documento illustra gli step necessari per aggiornare le versioni dei
 |Wso2 Identity Server   |6.0.0          |6.1.0      |[600to610](/is/600to610/) |
 |Wso2 Micro Integrator  |4.2.0          |4.3.0      |[420to430](/mi/420to430/) |
 
-### AM 4.3.0
-* (Docs)[https://apim.docs.wso2.com/en/4.3.0/]
-* (Release Notes)[https://apim.docs.wso2.com/en/4.3.0/get-started/about-this-release/]
-* (Reference)[https://apim.docs.wso2.com/en/4.3.0/reference/product-apis/overview/]
-* (DB Docs)[https://apim.docs.wso2.com/en/4.3.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/]
-* DB Upgrade: https://apim.docs.wso2.com/en/4.3.0/reference/guides/database-upgrade-guide/]
-
 ## Documentazione di riferimento per WSO2 Identity Server
 
 ### IS 5.11.0
