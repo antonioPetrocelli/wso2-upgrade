@@ -33,6 +33,4 @@
         
 ## AM DB Version Comparison
 * [410to420](/am/410to420/db/postgres/)
-* <a href="410to420.html" target="_blank">WSO2 AM 4.1.0 To WSO2 AM 4.2.0 Database comparison</a>
-* <a href="420to430.html" target="_blank">WSO2 AM 4.2.0 To WSO2 AM 4.3.0 Database comparison</a>
-* <a href="410to430.html" target="_blank">WSO2 AM 4.1.0 To WSO2 AM 4.3.0 Database comparison</a>
+* [420to430](/am/420to430/db/postgres/)
