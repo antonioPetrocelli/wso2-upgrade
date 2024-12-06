@@ -17,8 +17,7 @@ La presente documentazione illustra gli step necessari per aggiornare le version
 |Wso2 Micro Integrator  |4.2.0          |4.3.0      |[mi](/mi/) |[420to430](/mi/420to430/) |
 
 * Appunti
-* Database: controllare differenze negli script
-* (Release Notes)[controllare funzionalità deprecate e/o dismesse
+* Release Notes: controllare funzionalità deprecate e/o dismesse
 * Ricerche:
     * WSO2 Upgrade Process
     * WSO2 Database Upgrade Guide
