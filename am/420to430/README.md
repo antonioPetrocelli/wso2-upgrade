@@ -1,4 +1,4 @@
-# Upgrading WSO2 API Manager from version 4.2.0 to 4.3.0
+# Aggiornamento di WSO2 API Manager dalla versione 4.2.0 alla versione 4.3.0
 
 ## Documentazione di riferimento per WSO2 Api Manager
 
@@ -32,5 +32,5 @@
 * Source script v4.3.0: [<API-M_HOME>/dbscripts/](/am/wso2am-4.3.0/dbscripts/)
 * **Note:** *By default WSO2CARBON_DB will be an embedded H2 database and it is not necessary to change it to another database. But if you have a requirement to change it, make sure that each server node have its own WSO2CARBON_DB*
         
-## AM Postgres DB Version Comparison
+## Verifica delle differenze nella struttura tra i DB Postgres
 * [420to430](/am/420to430/db/postgres/)

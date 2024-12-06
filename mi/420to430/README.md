@@ -1,4 +1,4 @@
-# Upgrading WSO2 Micro Integrator from version 4.2.0 to 4.3.0
+# Aggiornamento di WSO2 Micro Integrator dalla versione 4.2.0 alla versione 4.3.0
 
 ## Documentazione di riferimento per WSO2 Micro Integrator
 
@@ -16,5 +16,5 @@
 
 ## Database utilizzati da WSO2 Micro Integrator
         
-## IS Postgres DB Version Comparison
+## Verifica delle differenze nella struttura tra i DB Postgres
 * [420to430](/mi/420to430/db/postgres/)

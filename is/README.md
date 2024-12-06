@@ -1,27 +1,27 @@
-# Upgrading WSO2 Identity Server: steps needed
+# Aggiornamento di WSO2 Identity Server
 
-1. Setting Up a new Deployment
+1. Preparare un nuovo ambiente di deploy
 
-    Begin with establishing a new deployment environment for WSO2 IS, ensuring you don’t disrupt your existing setup. This approach allows for a seamless transition and testing phase before going live. A new upgrade environment is  preferable over an in-place upgrade, so as not to interfere with ongoing development work and reduce the switching downtime.
+    Un nuovo ambiente di aggiornamento è preferibile rispetto ad un aggiornamento in-place, in modo da non interferire con il lavoro di sviluppo in corso, ridurre i tempi di inattività della migrazione e non interrompere la configurazione esistente. Questo approccio consente una transizione senza soluzione di continuità e una fase di test prima della messa in funzione. 
     
-    1.1 Install WSO2 IS in the new environment whitout start it.
+    1.1 Installare WSO2 IS nel nuovo ambiente senza avviarlo.
 
-2. Migrating Configurations from older version
+2. Migrazione delle configurazioni dalla versione precedente
 
     2.1. deployment.toml
     2.2. log4j2.properties
     2.3. Java KeyStores
     2.4. Custom components (libs, jars etc ...)
-    2.5. Check java version compatibility for custom component
+    2.5. Controllare la compatibilità della versione Java per i custom components
 
-4. Database Migration
+4. Migrazione del database
 
-    4.1. Copy the old database in a new one
-    4.2. Check the database structure differences and create db scripts to reflect the differences in the new database
-    4.3. Apply database scripts to the new database for upgrade it to the new version
+    4.1. Preparare una copia del vecchio database
+    4.2. Controllare le differenze nella struttura dei database e creare gli script di aggiornamento
+    4.3. Applicare gli script di aggioramento sul nuovo database.
 
-5. Start the application
+5. Avviare l'applicazione
 
-6. Testing
+6. Test
 
-7. Change Load Balancer config to point to the new environment
+7. Modificare la configurazione del Load Balancer per farlo puntare al nuovo ambiente

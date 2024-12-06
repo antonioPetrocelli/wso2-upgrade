@@ -1,12 +1,12 @@
 # WSO2 Upgrade
- HowTo upgrade wso2am, wso2is and wso2mi
+ Linee guida per l'aggiornamento di versione di Wso2 API Manager, Identity Server e Micro Integrator
 
 |Redatto da    |Antonio Petrocelli                   |
 |--------------|-------------------------------------|
 |Aggiornato da |Antonio Petrocelli                   |
 |Versione: 1.0 |Data: 05/12/2024 - Bozza             |
 
-Il presente documento illustra gli step necessari per aggiornare le versioni dei seguenti prodotti WSO2
+La presente documentazione illustra gli step necessari per aggiornare le versioni dei seguenti prodotti WSO2
 
 |Product                |From Version   |To Version |Docs                      |
 |-----------------------|---------------|-----------|---------------------------
