@@ -25,3 +25,10 @@
 6. Test
 
 7. Modificare la configurazione del Load Balancer per farlo puntare al nuovo ambiente
+
+## Upgrades documentati
+
+|Product                |From Version   |To Version |Docs                      |
+|-----------------------|---------------|-----------|--------------------------|
+|Wso2 Identity Server   |5.11.0         |6.0.0      |[511to600](/is/511to600/) |
+|Wso2 Identity Server   |6.0.0          |6.1.0      |[600to610](/is/600to610/) |

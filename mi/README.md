@@ -25,3 +25,9 @@
 6. Test
 
 7. Modificare la configurazione del Load Balancer per farlo puntare al nuovo ambiente
+
+## Upgrades documentati
+
+|Product                |From Version   |To Version |Docs                      |
+|-----------------------|---------------|-----------|--------------------------|
+|Wso2 Micro Integrator  |4.2.0          |4.3.0      |[420to430](/mi/420to430/) |

@@ -25,3 +25,10 @@
 6. Test
 
 7. Modificare la configurazione del Load Balancer per farlo puntare al nuovo ambiente
+
+## Upgrades documentati
+
+|Product                |From Version   |To Version |Docs                      |
+|-----------------------|---------------|-----------|--------------------------|
+|Wso2 API Manager       |4.1.0          |4.2.0      |[410to420](/am/410to420/) |
+|Wso2 API Manager       |4.1.0          |4.2.0      |[420to430](/am/420to430/) |
