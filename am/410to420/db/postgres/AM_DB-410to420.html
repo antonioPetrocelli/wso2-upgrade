@@ -20,7 +20,7 @@
 			font-size: 12px;
 		}
 		td { 
-			border: 1px solid black;
+			border: 1px solid;
 			display: table-cell;
 			word-wrap: break-word;
 			white-space: wrap;
@@ -32,7 +32,6 @@
 		h1 { 
 			font-family: Courier New;
 			font-size: 24px;
-			color: red;
 		}
 		img { 
 			width: 100%;
@@ -140,8 +139,11 @@
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3">
-<pre>
+		<!-- Screenshot 00 -->
+		<tr>
+			<td colspan="2"><img src="img/410to420_00.png"></td>
+			<td>
+				<pre>
 DROP TABLE IF EXISTS IDN_OAUTH2_USER_CONSENT;
 DROP SEQUENCE IF EXISTS IND_OAUTH2_USER_CONSENT_PK_SEQ;
 CREATE SEQUENCE IDN_OAUTH2_USER_CONSENT_PK_SEQ;
@@ -213,7 +215,7 @@ CREATE TABLE SP_SHARED_APP(
 	UNIQUE (MAIN_APP_ID, OWNER_ORG_ID, SHARED_ORG_ID),
 	UNIQUE (SHARED_APP_ID)
 );
-</pre>
+				</pre>
 			</td>
 		</tr>
 		<!-- Screenshot 08 -->
@@ -261,7 +263,7 @@ CREATE TABLE SP_SHARED_APP(
 		<tr>
 			<td colspan="2"><img src="img/410to420_10.png"></td>
 			<td>
-<pre>
+				<pre>
 DROP SEQUENCE IF EXISTS CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ;
 CREATE SEQUENCE CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ;
 ALTER TABLE CM_CONSENT_RECEIPT_PROPERTY ADD COLUMN ID INTEGER DEFAULT NEXTVAL('CM_CONSENT_RECEIPT_PROPERTY_PK_SEQ');
@@ -295,7 +297,7 @@ CREATE TABLE IF NOT EXISTS AM_CORRELATION_PROPERTIES(
 		FOREIGN KEY (COMPONENT_NAME) REFERENCES AM_CORRELATION_CONFIGS(COMPONENT_NAME) ON DELETE CASCADE
 	);
 CREATE INDEX IDX_IOAT_TSH_TS ON IDN_OAUTH2_ACCESS_TOKEN(TOKEN_SCOPE_HASH,TOKEN_STATE);
-</pre>
+				</pre>
 			</td>
 		</tr>
 	</table>

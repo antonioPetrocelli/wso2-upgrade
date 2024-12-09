@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WSO2 IS 6.0.0 to 6.1.0 PostGres DB Comparison</title>
+		<meta name="description" content="WSO2 IS 6.0.0 to 6.1.0 PostGres DB Comparison for version upgrade"/>
+		<meta name="color-scheme" content="light dark"/>
+		<style type="text/css">
+		table {
+			table-layout: fixed;
+			width: 100%;
+			text-align: left;
+			vertical-align: top;
+			font-family: Courier New;
+			font-size: 12px;
+		}
+		tr,th,td { 
+			text-align: left;
+			vertical-align: top;
+			font-family: Courier New;
+			font-size: 12px;
+		}
+		td { 
+			border: 1px solid;
+			display: table-cell;
+			word-wrap: break-word;
+			white-space: wrap;
+		}
+		pre { 
+			font-family: Courier New;
+			font-size: 12px;
+		}
+		h1 { 
+			font-family: Courier New;
+			font-size: 24px;
+		}
+		img { 
+			width: 100%;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Attenzione: verificare la sintassi degli script per ADD, ALTER e DROP CONSTRAINT</h1>
+	<table>
+		<tr>
+			<th>IS 6.0.0 - WSO2IDENTITY_DB</th>
+			<th>IS 6.1.0 - WSO2IDENTITY_DB</th>
+			<th>Script</th>
+		</tr>
+		<!-- Screenshot 01 -->
+		<tr>
+			<td colspan="2"><img src="img/600to610_01.png"></td>
+			<td>
+				<ul>
+					<li>ALTER TABLE IDN_OAUTH2_DEVICE_FLOW ADD COLUMN SUBJECT_IDENTIFIER VARCHAR(255);</li>
+					<li>INSERT INTO IDN_CONFIG_TYPE (ID, NAME, DESCRIPTION) VALUES ('7f24050f-3e3d-4a00-b10f-fd5450d6523e', 'input-validation-configurations', 'A resource type to store input validation related configurations');</li>
+					<li>ALTER TABLE SP_SHARED_APP ADD COLUMN SHARE_WITH_ALL_CHILDREN BOOLEAN DEFAULT FALSE;</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	</body>
+</html>

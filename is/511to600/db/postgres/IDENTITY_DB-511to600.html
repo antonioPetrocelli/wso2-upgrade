@@ -20,7 +20,7 @@
 			font-size: 12px;
 		}
 		td { 
-			border: 1px solid black;
+			border: 1px solid;
 			display: table-cell;
 			word-wrap: break-word;
 			white-space: wrap;
@@ -32,7 +32,6 @@
 		h1 { 
 			font-family: Courier New;
 			font-size: 24px;
-			color: red;
 		}
 		img { 
 			width: 100%;
@@ -112,9 +111,11 @@
 				</ul>
 			</td>
 		</tr>
+		<!-- Screenshot 10 -->
 		<tr>
-			<td colspan="3">
-<pre>
+			<td colspan="2"><img src="img/511to600_10.png"></td>
+			<td>
+				<pre>
 DROP TABLE IF EXISTS IDN_OAUTH2_USER_CONSENT;
 DROP SEQUENCE IF EXISTS IND_OAUTH2_USER_CONSENT_PK_SEQ;
 CREATE SEQUENCE IDN_OAUTH2_USER_CONSENT_PK_SEQ;
@@ -188,7 +189,7 @@ CREATE TABLE SP_SHARED_APP(
 	UNIQUE (MAIN_APP_ID, OWNER_ORG_ID, SHARED_ORG_ID),
 	UNIQUE (SHARED_APP_ID)
 );
-</pre>
+				</pre>
 			</td>
 		</tr>
 		<!-- Screenshot 09 -->
