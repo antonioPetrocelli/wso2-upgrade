@@ -10,11 +10,11 @@ La presente documentazione illustra gli step necessari per aggiornare le version
 
 |Product                |From Version   |To Version |Guidelines |Docs                      |
 |-----------------------|---------------|-----------|-----------|--------------------------|
-|Wso2 API Manager       |4.1.0          |4.2.0      |[am](/am/) |[410to420](/am/410to420/) |
+|Wso2 API Manager       |4.1.0          |4.2.0      |[am](/am/README.md) |[410to420](/am/410to420/) |
 |Wso2 API Manager       |4.1.0          |4.2.0      |           |[420to430](/am/420to430/) |
-|Wso2 Identity Server   |5.11.0         |6.0.0      |[is](/is/) |[511to600](/is/511to600/) |
+|Wso2 Identity Server   |5.11.0         |6.0.0      |[is](/is/README.md) |[511to600](/is/511to600/) |
 |Wso2 Identity Server   |6.0.0          |6.1.0      |           |[600to610](/is/600to610/) |
-|Wso2 Micro Integrator  |4.2.0          |4.3.0      |[mi](/mi/) |[420to430](/mi/420to430/) |
+|Wso2 Micro Integrator  |4.2.0          |4.3.0      |[mi](/mi/README.md) |[420to430](/mi/420to430/) |
 
 ## To Do
 * Verificare la sintassi degli script PostGres per ADD, ALTER e DROP CONSTRAINT
