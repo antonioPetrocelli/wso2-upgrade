@@ -15,6 +15,16 @@
 * (DB Docs)[https://mi.docs.wso2.com/en/4.3.0/install-and-setup/setup/databases/setting-up-postgresql/]
 
 ## Database utilizzati da WSO2 Micro Integrator
-        
+
+### WSO2CarbonDB
+* deployment.toml section: [[datasource]]
+* Source script v4.2.0: [<MI_HOME>/dbscripts/](/mi/wso2am-4.2.0/dbscripts/postgres/postgresql_user.sql)
+* Source script v4.3.0: [<MI_HOME>/dbscripts/](/mi/wso2am-4.3.0/dbscripts/postgres/postgresql_user.sql)
+
+### WSO2_COORDINATION_DB
+* deployment.toml section: [[datasource]]
+* Source script v4.2.0: [<MI_HOME>/dbscripts/](/mi/wso2am-4.2.0/dbscripts/postgres/postgresql_cluster.sql)
+* Source script v4.3.0: [<MI_HOME>/dbscripts/](/mi/wso2am-4.3.0/dbscripts/postgres/postgresql_cluster.sql)
+
 ## Verifica delle differenze nella struttura tra i DB Postgres
 * [420to430](/mi/420to430/db/postgres/)
