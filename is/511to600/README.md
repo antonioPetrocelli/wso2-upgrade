@@ -27,10 +27,10 @@
 * Source script v6.0.0: [<IS-HOME>/dbscripts/](/is/wso2is-6.0.0/dbscripts/)
 
 ### WSO2UMA_DB
-* verificare
+* Verificare se è stato separato dal WSO2IDENTITY_DB
 
 ### WSO2CONSENT_DB
-* verificare
+* Verificare se è stato separato dal WSO2IDENTITY_DB
 
 ### WSO2CARBON_DB
 * deployment.toml section: [database.local]
