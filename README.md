@@ -20,4 +20,4 @@ La presente documentazione illustra gli step necessari per aggiornare le version
 * Verificare la sintassi degli script PostGres per ADD, ALTER e DROP CONSTRAINT
 * Verificare se WSO2UMA_DB e WSO2CONSENT_DB sono stati separati dal WSO2IDENTITY_DB
 * Verificare uso di [apim.sync_runtime_artifacts.gateway] in <APIM_HOME>/repository/conf/deployment.toml: in 4.2.0 it is recommended to use the `async` mode only
-* Release Notes: controllare funzionalità deprecate e/o dismesse
+* Release Notes: controllare se sono usate le funzionalità deprecate e/o dismesse
