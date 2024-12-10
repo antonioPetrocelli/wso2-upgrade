@@ -8,11 +8,40 @@
 * [Reference](https://is.docs.wso2.com/en/6.0.0/references/references-overview/)
 * [DB Docs](https://is.docs.wso2.com/en/6.0.0/deploy/work-with-databases/)
 
+#### [IS 6.0.0 Deprecated & Removed features](https://is.docs.wso2.com/en/6.0.0/references/about-this-release/#removed-features)
+* Deprecated features and functionalities
+    * **SCIM 1 inbound provisioning**: Use SCIM 2.0 inbound provisioning
+	* **SCIM 1 outbound provisioning**: Use SCIM 2.0 outbound provisioning
+	* **SOAP APIs**: Use REST-based APIs
+	* **Legacy DCR endpoint implementation (/identity/register)**: Use /identity/oauth2/dcr/v1.1
+* Removed features and functionalities
+	* **H2 Console**
+	* **Embedded LDAP user store**
+	* **Carbon metrics**
+	* **Yahoo authenticator**
+	* **Legacy OpenID authentication**
+	* **reCAPTCHA v2 "I'm not a robot" Checkbox**
+	* **Hazelcast DNS based pod discovery in Kubernetes membership scheme**
+
 ### IS 6.1.0
 * [Docs](https://is.docs.wso2.com/en/6.1.0/)
 * [Release Notes](https://is.docs.wso2.com/en/6.1.0/get-started/about-this-release/)
 * [Reference](https://is.docs.wso2.com/en/6.1.0/references/references-overview/)
 * [DB Docs](https://is.docs.wso2.com/en/6.1.0/deploy/work-with-databases/)
+
+#### [IS 6.1.0 Deprecated & Removed features](https://is.docs.wso2.com/en/6.1.0/references/about-this-release/#removed-features)
+* Deprecated features and functionalities
+    * **SCIM 1 inbound provisioning**: Use SCIM 2.0 inbound provisioning
+	* **SCIM 1 outbound provisioning**: Use SCIM 2.0 outbound provisioning
+	* **SOAP APIs**: Use REST-based APIs
+	* **Legacy DCR endpoint implementation (/identity/register)**: Use /identity/oauth2/dcr/v1.1
+	* **On-prem WSO2 Identity Server Analytics solution (based on WSO2 Streaming Processor)**: Use ELK-based analytics
+ Removed features and functionalities
+	* **H2 Console**
+	* **Embedded LDAP user store**
+	* **Carbon metrics**
+	* **Yahoo authenticator**
+	* **reCAPTCHA v2 "I'm not a robot" checkbox **
 
 ## Database utilizzati da WSO2 Identity Server
 
