@@ -3,16 +3,16 @@
 ## Documentazione di riferimento per WSO2 Api Manager
 
 ### AM 4.1.0
-* (Docs)[https://apim.docs.wso2.com/en/4.1.0/]
-* (Release Notes)[https://apim.docs.wso2.com/en/4.1.0/get-started/about-this-release/
-* (Reference)[https://apim.docs.wso2.com/en/4.1.0/reference/product-apis/overview/
-* (DB Docs)[https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/
+* [Docs](https://apim.docs.wso2.com/en/4.1.0/)
+* [Release Notes](https://apim.docs.wso2.com/en/4.1.0/get-started/about-this-release/)
+* [Reference](https://apim.docs.wso2.com/en/4.1.0/reference/product-apis/overview/)
+* [DB Docs](https://apim.docs.wso2.com/en/4.1.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/)
 
 ### AM 4.2.0
-* (Docs)[https://apim.docs.wso2.com/en/4.2.0/]
-* (Release Notes)[https://apim.docs.wso2.com/en/4.2.0/get-started/about-this-release/]
-* (Reference)[https://apim.docs.wso2.com/en/4.2.0/reference/product-apis/overview/]
-* (DB Docs)[https://apim.docs.wso2.com/en/4.2.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/]
+* [Docs](https://apim.docs.wso2.com/en/4.2.0/)
+* [Release Notes](https://apim.docs.wso2.com/en/4.2.0/get-started/about-this-release/)
+* [Reference](https://apim.docs.wso2.com/en/4.2.0/reference/product-apis/overview/)
+* [DB Docs](https://apim.docs.wso2.com/en/4.2.0/install-and-setup/setup/setting-up-databases/changing-default-databases/changing-to-postgresql/)
 
 ## Database utilizzati da WSO2 Api Manager
 

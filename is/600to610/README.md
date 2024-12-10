@@ -3,16 +3,16 @@
 ## Documentazione di riferimento per WSO2 Identity Server
 
 ### IS 6.0.0
-* (Docs)[https://is.docs.wso2.com/en/6.0.0/]
-* (Release Notes)[https://is.docs.wso2.com/en/6.0.0/get-started/about-this-release/]
-* (Reference)[https://is.docs.wso2.com/en/6.0.0/references/references-overview/]
-* (DB Docs)[https://is.docs.wso2.com/en/6.0.0/deploy/work-with-databases/]
+* [Docs](https://is.docs.wso2.com/en/6.0.0/)
+* [Release Notes](https://is.docs.wso2.com/en/6.0.0/get-started/about-this-release/)
+* [Reference](https://is.docs.wso2.com/en/6.0.0/references/references-overview/)
+* [DB Docs](https://is.docs.wso2.com/en/6.0.0/deploy/work-with-databases/)
 
 ### IS 6.1.0
-* (Docs)[https://is.docs.wso2.com/en/6.1.0/]
-* (Release Notes)[https://is.docs.wso2.com/en/6.1.0/get-started/about-this-release/]
-* (Reference)[https://is.docs.wso2.com/en/6.1.0/references/references-overview/]
-* (DB Docs)[https://is.docs.wso2.com/en/6.1.0/deploy/work-with-databases/]
+* [Docs](https://is.docs.wso2.com/en/6.1.0/)
+* [Release Notes](https://is.docs.wso2.com/en/6.1.0/get-started/about-this-release/)
+* [Reference](https://is.docs.wso2.com/en/6.1.0/references/references-overview/)
+* [DB Docs](https://is.docs.wso2.com/en/6.1.0/deploy/work-with-databases/)
 
 ## Database utilizzati da WSO2 Identity Server
 
