@@ -7,7 +7,11 @@
 * [Release Notes](https://mi.docs.wso2.com/en/4.2.0/get-started/about-this-release/)
 * [Reference](https://mi.docs.wso2.com/en/4.2.0/reference/config-catalog-mi/)
 * [DB Docs](https://mi.docs.wso2.com/en/4.2.0/install-and-setup/setup/databases/setting-up-postgresql/)
-	
+
+#### [MI 4.2.0 Deprecated & Removed features](https://mi.docs.wso2.com/en/4.2.0/get-started/about-this-release/#deprecated-features-and-functionalities)
+* Removed features and functionalities
+    * **JDK 8 support is removed.**
+
 ### MI 4.3.0
 * [Docs](https://mi.docs.wso2.com/en/4.3.0/)
 * [Release Notes](https://mi.docs.wso2.com/en/4.3.0/get-started/about-this-release/)
