@@ -4,7 +4,7 @@
 |Redatto da    |Antonio Petrocelli                   |
 |--------------|-------------------------------------|
 |Aggiornato da |Antonio Petrocelli                   |
-|Versione: 1.0 |Data: 05/12/2024 - Bozza             |
+|Versione: 1.0 |Data: 13/12/2024 - Bozza             |
 
 La presente documentazione illustra gli step necessari per aggiornare le versioni dei seguenti prodotti WSO2
 
