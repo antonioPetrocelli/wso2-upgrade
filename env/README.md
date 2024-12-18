@@ -7,7 +7,7 @@
 * [SI Cluster](dev/si.svg)
 
 ## cert
-* [EKS](cert/eks.svg)
+* [EKS](cert/eks.png)
 * [CP Cluster](cert/cp.svg)
 * [GW Cluster](cert/gw.svg)
 * [SI Cluster](cert/si.svg)
