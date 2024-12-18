@@ -1,25 +1,25 @@
 # Ambienti WSO2
 
 ## dev
-* [EKS](dev/eks.svg)
-* [CP Cluster](dev/cp.svg)
-* [GW Cluster](dev/gw.svg)
-* [SI Cluster](dev/si.svg)
+* [EKS](dev/eks.jpg)
+* [CP Cluster](dev/cp.jpg)
+* [GW Cluster](dev/gw.jpg)
+* [SI Cluster](dev/si.jpg)
 
 ## cert
 * [EKS](cert/eks.jpg)
-* [CP Cluster](cert/cp.svg)
-* [GW Cluster](cert/gw.svg)
-* [SI Cluster](cert/si.svg)
+* [CP Cluster](cert/cp.jpg)
+* [GW Cluster](cert/gw.jpg)
+* [SI Cluster](cert/si.jpg)
 
 ## pre
-* [EKS](pre/eks.svg)
-* [CP Cluster](pre/cp.svg)
-* [GW Cluster](pre/gw.svg)
-* [SI Cluster](pre/si.svg)
+* [EKS](pre/eks.jpg)
+* [CP Cluster](pre/cp.jpg)
+* [GW Cluster](pre/gw.jpg)
+* [SI Cluster](pre/si.jpg)
 
 ## prod
-* [EKS](prod/eks.svg)
-* [CP Cluster](prod/cp.svg)
-* [GW Cluster](prod/gw.svg)
-* [SI Cluster](prod/si.svg)
+* [EKS](prod/eks.jpg)
+* [CP Cluster](prod/cp.jpg)
+* [GW Cluster](prod/gw.jpg)
+* [SI Cluster](prod/si.jpg)
